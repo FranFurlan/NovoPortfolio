@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    text-size-adjust: 100%;
+    background-image: radial-gradient(circle at 50% -20.71%, #ff00ff 0, #ff00ff 16.67%, #db00ff 33.33%, #aa10f8 50%, #7719e5 66.67%, #3e1ed3 83.33%, #0020c2 100%);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+    background-color: rgb(227, 114, 197);
+}
+
+.img-cabecalho{
+    height: 75px;
+    border-radius: 75%;
+}
+
+.menu-cabecalho{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.item-cabecalho{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2EF;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.item-cabecalho:hover{
+    background-color: #FFF2EF;
+    color: #1E1E2A;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.titulo{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    font-weight: 400px;
+    color: #FFF2E7;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 200px;
+    color: #FFF2E7;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    border: 0;
+}
+
+.grupo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre{
+    margin-left: -36px;
+}
+
+.box {
+    margin-bottom: 0.2em;
+    color: #FFF2E7;
+    margin-left: 250px;
+    
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{    
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: #FFF2E7;
+    font-family: 'Righteous', cursive;
+    font-weight: 400px;
+    font-size: 14px;  
+}
+
+.campo input{
+    padding: 0.2em;
+    border: 1px solid #FFF2E7;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tec{
+    color: #FFF2E7;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+}
+
+.conte{
+    display: flex;
+    justify-content: center;
+    margin-left: -230px;
+}
+
+.area{
+    display: block;
+    height: 100px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: 16px;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: #ECD6C4;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: #aa10f8;
+    background-image: radial-gradient(circle at 50% -20.71%, #ff00ff 0, #ff00ff 16.67%, #db00ff 33.33%, #aa10f8 50%, #7719e5 66.67%, #3e1ed3 83.33%, #0020c2 100%);
+    border: 0.2 solid ;
+    border-color: #ccbbff;
+    margin-top: 6px;
+    margin-left: 80px;
+    margin-bottom: 36px;
+    color: #FFF2E7;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute; 
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover{
+    background: #ccbbff;
+    color: #aa10f8;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.carregando{
+    width: 35px;
+    border-radius: 75%;
+    animation: girar 1s infinite linear;
+}
+
+@keyframes girar{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* footer*/
+
+.rodape{
+    border-top: 0.7px dotted #FFF2E7;
+    margin-top: 56px;
+    margin-bottom: 36px;  
+
+}
+
+ .conteudo-rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+ }
+
+.contato-rodape{
+    font-family: 'Righteous', cursive;
+    font-weight: 400px;
+    font-size: 20px;
+    color: #FFF2E7; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.item-rodape{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.icones{
+    height: 55px;
+    border-radius: 55px;
+    list-style: none;
+    margin-left: 140px;
+    margin-top: 36px;
+}
+
+.icones:hover{
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.social{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300px;
+    font-size: 14px;
+    color: #ECD6C4;
+    text-align: center;      
+}

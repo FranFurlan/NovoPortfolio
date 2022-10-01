@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="contato.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="img-cabecalho" src="avatarFran.jpeg" alt="avatar da Fran">
+        <nav class="menu-cabecalho">
+            <li><a class="item-cabecalho" href="sobreMim.html">Sobre mim</a></li>
+            <li><a class="item-cabecalho" href="projetos.html">Projetos</a></li>            
+            <li><a class="item-cabecalho" href="contatos.html">Contatos</a></li>
+            <li><a class="item-cabecalho" href="index.html" >Voltar</a></li>
+        </nav>
+    </header>
+    <div>
+        <h1 class="titulo">Cadastro de contatos</h1>
+        <p class="subtitulo">Preencha com suas informações!</p>
+        <br>
+    </div>
+    <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="campo">
+                <label class="sobre" for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+            
+            <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="campo">
+            <label><strong>De qual lado de aplicação você desenvolve?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+            </div>
+            
+            <div class="campo">
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="box">
+                <label class="selecione"><strong>Selecione as tecnologias que você utiliza:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label class="tec" for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label class="tec" for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label class="tec" for="tecnologia3">JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label class="tec" for="tecnologia4">PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label class="tec" for="tecnologia5">C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label class="tec" for="tecnologia6">Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label class="tec" for="tecnologia7">Java</label>
+                
+                <div class="campo">
+                    <br>
+                    <label class="conte">Conte sua experiência</label>
+                    <textarea class="area" rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
+                </div>
+                <button class="botao" type="submit">Concluído</button>
+            </div>
+        </fieldset>
+  
+    </form>
+    <script src="script.js"></script>
+
+    <footer class="rodape">
+        <h4 class="contato-rodape">Contatos</h4>
+    
+        <div class="conteudo-rodape">        
+            <li><a class="item-rodape" href="mailto:franlipetel@gmail.com" target="_blank"><img class="icones" src="email.png" alt="Gmail"></a></li>
+            <li><a class="item-rodape" href="https://www.facebook.com/franciely.furlan.5/" target="_blank"><img class="icones" src="facebook.png" alt="Facebok"></a></li>
+            <li><a class="item-rodape" href="https://github.com/FranFurlan" target="_blank"><img class="icones" src="GitHub.png" alt="GitHub"></a></li>
+            <li><a class="item-rodape" href="https://www.linkedin.com/in/franciely-cristina-furlan-266683181/" target="_blank"><img class="icones" src="linkedin.png" alt="Linkedin"></a></li>
+            <li><a class="item-rodape" href="https://www.instagram.com/francielycfurlan/" target="_blank"><img class="icones" src="instagram.png" alt="Instagram"></a></li>
+        </div>  
+        
+    </footer>
+    
+</body>
+</html>
